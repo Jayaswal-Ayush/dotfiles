@@ -10,7 +10,7 @@
 source ~/.config/zsh/.zprofile #.zshenv stuff
 export TERM="xterm-256color"
 export HISTFILE=~/.config/zsh/.zsh_history
-export EDITOR='nvim'
+export EDITOR='vim'
 export TERMINAL='alacritty'
 export BROWSER='firefox'
 
@@ -20,18 +20,15 @@ HISTFILE=~/.config/zsh/.zsh_history
 
 # Basic zsh settings
 PATH=$PATH:$HOME/.scripts #making my scripts run without typing the whole path
-bindkey -v # vi-mode
 autoload -Uz compinit && compinit #need the next two lines for case insensitive tab completion
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 # Prompt Settings
 declare -a PROMPTS
-PROMPTS=(
-	"ﮊ "
-	" "
+PROMPTS=(	" "
 	" "
-	" "
-	" "
-)
+	"# "
+	" ")
+
 RANDOM=$$$(date +%s)
 ignition=${PROMPTS[$RANDOM % ${#RANDOM[*]}+1]}
 PROMPT='%F{green}%1~%f %F{red}$ignition%f '
@@ -45,17 +42,22 @@ zstyle ':vcs_info:git:*' formats '%F{yellow}(%b)%r%f'
 zstyle ':vcs_info:*' enable git
 # Aliases
 ## App launchers
-alias f='ranger'
-alias t='bpytop'
+alias bt='bat -p'
 alias weather='curl wttr.in'
 alias kill='killall -q'
 alias wal='feh --bg-fill --randomize ~/.config/wall/*'
 alias ls='exa'
 alias colors="$HOME/.config/scripts/color.sh"
+alias zshrc="vim ~/.config/zsh/.zshrc"      
+alias awesomerc="vim ~/.config/awesome/rc.lua"      
+alias config="ranger ~/.config/"
+alias pp="polybar gruvbox --config=~/proj/polybar.old/config"
+alias vp="vi ~/proj/polybar.old/config"
+alias sound="pulsemixer"
 # Snippets
 alias ddate='date +"%R - %a, %B %d, %Y" | xclip -select clipboard && date +"%R - %a, %B %d, %Y"' 
 alias dday='date +"%Y.%m.%d - " | xclip -select clipboard ; date +"%Y.%m.%d"'
 
-#source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-#ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
