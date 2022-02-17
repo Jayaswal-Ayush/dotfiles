@@ -5,15 +5,13 @@
 # ███╔╝  ╚════██║██╔══██║
 #███████╗███████║██║  ██║
 #╚══════╝╚══════╝╚═╝  ╚═╝
-#                      
 # Basic stff
 source ~/.config/zsh/.zprofile #.zshenv stuff
 export TERM="xterm-256color"
 export HISTFILE=~/.config/zsh/.zsh_history
-export EDITOR='vim'
-export TERMINAL='alacritty'
+export EDITOR='nvim'
+export TERMINAL='st'
 export BROWSER='firefox'
-
 HISTSIZE=100000
 SAVEHIST=100000
 HISTFILE=~/.config/zsh/.zsh_history
@@ -46,13 +44,9 @@ alias bt='bat -p'
 alias weather='curl wttr.in'
 alias kill='killall -q'
 alias wal='feh --bg-fill --randomize ~/.config/wall/*'
-alias ls='exa'
-alias colors="$HOME/.config/scripts/color.sh"
+alias ls='exa -a'
 alias zshrc="vim ~/.config/zsh/.zshrc"      
-alias awesomerc="vim ~/.config/awesome/rc.lua"      
 alias config="ranger ~/.config/"
-alias pp="polybar gruvbox --config=~/proj/polybar.old/config"
-alias vp="vi ~/proj/polybar.old/config"
 alias sound="pulsemixer"
 # Snippets
 alias ddate='date +"%R - %a, %B %d, %Y" | xclip -select clipboard && date +"%R - %a, %B %d, %Y"' 
