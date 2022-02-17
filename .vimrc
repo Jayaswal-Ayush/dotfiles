@@ -4,7 +4,6 @@
 """"       \ V /| | | | | | | | | (__ 
 """"      (_)_/ |_|_| |_| |_|_|  \___|
 """"
-
 set number relativenumber
 set noswapfile
 set incsearch
