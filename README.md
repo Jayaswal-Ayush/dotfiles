@@ -2,10 +2,7 @@
 
 Install Qtile Dependencies 
 ```
-pip install xcffib
-pip install cairocffi
-pip install asyncio
-pip install trollius
+pip install xcffib cairocffi asyncio trollius psutil
 ```
 ```
 git clone git://github.com/qtile/qtile.git
