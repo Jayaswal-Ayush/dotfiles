@@ -1,7 +1,7 @@
 # dotfiles
 
 Install Qtile Dependencies 
- ```
+```
 pip install xcffib
 pip install cairocffi
 pip install asyncio
@@ -13,4 +13,4 @@ cd qtile
 sudo python setup.py install
 
 pip install qtile
- ```
+```
