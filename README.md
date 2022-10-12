@@ -11,3 +11,8 @@ pip install .
 
 pip install qtile
 ```
+## Qtile
+![qtile](qtile.png)
+
+## leftwm
+![leftwm](leftwm.png)
