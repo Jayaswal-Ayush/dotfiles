@@ -16,6 +16,10 @@ call plug#begin('~/.config/nvim/plugged')
       Plug 'mhinz/vim-startify'
       Plug 'chriskempson/tomorrow-theme'
       Plug 'ap/vim-css-color'
+      Plug 'jiangmino/auto-pairs'
+      Plug 'preservim/nerdtree'
+      Plug 'tpope/vim-surround'
+      plug 'alvan/vim-closetag'
 call plug#end()
 
 "  Color Settings
@@ -27,6 +31,10 @@ let g:limelight_conceal_guifg = '#777777'
 hi! Normal ctermbg=NONE guibg=NONE 
 hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 
+noremap <leader>n :NERDTreeFocus<CR>
+noremap <C-n> :NERDTree<CR>
+noremap <C-t> :NERDTreeToggle<CR>
+noremap <C-f> :NERDTreeFind<CR>
 
 " make Vim behave in a more useful way
 set nocompatible
