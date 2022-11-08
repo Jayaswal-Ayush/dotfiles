@@ -16,10 +16,11 @@ call plug#begin('~/.config/nvim/plugged')
       Plug 'mhinz/vim-startify'
       Plug 'chriskempson/tomorrow-theme'
       Plug 'ap/vim-css-color'
-      Plug 'jiangmino/auto-pairs'
+      Plug 'jiangmiao/auto-pairs'
       Plug 'preservim/nerdtree'
+      Plug 'ryanoasis/vim-devicons'
       Plug 'tpope/vim-surround'
-      plug 'alvan/vim-closetag'
+      Plug 'alvan/vim-closetag'
 call plug#end()
 
 "  Color Settings
