@@ -1,0 +1,21 @@
+#
+super + shift + e 
+    emoji
+super + shift + c
+    color
+super + shift + g
+    getwall
+super + shift + i 
+    search 
+super + ctrl + c
+    xcalc
+super + ctrl + e
+    pcmanfm
+super + ctrl + b
+    brave
+super + ctrl + f
+    firefox
+super + ctrl + g 
+    sxiv ~/.wallpapers
+super + ctrl + l
+    slock
